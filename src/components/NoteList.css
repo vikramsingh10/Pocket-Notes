@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.heading {
+  background-color: #001f8b;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: calc(100% - 250px);
+  top: 0;
+  left: 250px;
+  color: #fff;
+  z-index: 10;
+}
+
+.group-initials {
+  background-color: #fff;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.note-list {
+  background-color: #dae5f5;
+  border-radius: 5px;
+  margin-top: 40px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  max-height: 46rem;
+  overflow-y: auto;
+}
+
+.notes {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.note {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.note p {
+  margin: 0;
+}
+
+.note span {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: end;
+}
+
+.add-note {
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  background-color: #dae5f5;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #ddd;
+}
+
+.add-note input {
+  flex: 1;
+  height: 10rem;
+  border: 20px solid #001f8b;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  position: relative;
+}
+
+.add-note input {
+  width: 100%;
+}
+
+.add-note button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.add-note button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.add-note button i {
+  font-size: 1.2rem;
+  color: #fff;
+}

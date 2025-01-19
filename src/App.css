@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  flex: 1;
+
+  background-color: #dae5f5;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #000;
+
+}
+.encrypted-text {
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  padding: 5px;
+}
+.encrypted-text i{
+  margin-right: 5px;
+}
+.placeholder img{
+  width: 626px;
+}
